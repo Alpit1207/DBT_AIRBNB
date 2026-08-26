@@ -21,6 +21,7 @@ SELECT
     END AS minimum_nights,
     host_id,
     REPLACE ( price_str, '$') :: number(10,2) AS price,
+    price_str,
     created_at,
     updated_at
 FROM
